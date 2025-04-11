@@ -72,13 +72,14 @@ a{
     position: absolute;
     display: none;
     grid-template-rows: repeat(2, 50%);
-    bottom: -90;
+    bottom: -80px;
     width: 120px;
-    height: 100px;
+    height: auto;
     overflow: hidden;
     border-radius: 10px;
     background-color: white;
     border: 2px solid #7A7A7A;
+    transform: all;
 }
 #subMenu > p{
     color: #7A7A7A;

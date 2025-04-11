@@ -1,12 +1,20 @@
+import React, { useRef } from 'react';
 import styles from './navbar.module.css'
 
 const Navbar = () => {
-    let mouseHover = () => {
-        document.getElementById('subMenu').style.display = "grid"
-    }
-    let mouseUnHover = () => {
-        document.getElementById('subMenu').style.display = "none"
-    }
+    const subMenuRef = useRef(null);
+
+    const mouseHover = () => {
+        if (subMenuRef.current) {
+            subMenuRef.current.style.display = "block";
+        }
+    };
+
+    const mouseUnHover = () => {
+        if (subMenuRef.current) {
+            subMenuRef.current.style.display = "none";
+        }
+    };
     return(
         <div className={styles.container}>
             <div className={styles.imagebox}>
@@ -20,10 +28,10 @@ const Navbar = () => {
                     <li>
                         <a href='#'> ابزارک ها </a>
                         </li>
-                    <li id='hasMenu' onMouseEnter={() => mouseHover()} onMouseLeave={() => mouseUnHover()}>
+                    <li id={styles.hasMenu} onMouseEnter={() => mouseHover()} onMouseLeave={() => mouseUnHover()}>
                         <a href='#'> ویژگی ها </a>
                         {/* has menu */}
-                        <div id={styles.subMenu}>
+                        <div id={styles.subMenu} ref={subMenuRef}>
                             <p>ایکون</p>
                             <p>قالب ها</p>
                         </div>
