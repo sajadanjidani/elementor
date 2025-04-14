@@ -11,7 +11,18 @@ const Gadgets = () => {
                 <p className={styles.subTitle}>برخی از ویجت ها قابلیت های پرکاربرد:</p>
             </div>
             <div className={styles.ItemContainer}>
-                
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
+                <GadgetsItem></GadgetsItem>
             </div>
         </div>
     )
