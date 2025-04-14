@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 70px;
+}
+
+.titleBox{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+.title{
+    color: #404757;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subTitle{
+    color: #7A7A7A;
+    font-size: 17px;
+}
