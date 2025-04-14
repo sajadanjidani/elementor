@@ -24,3 +24,13 @@
     color: #7A7A7A;
     font-size: 17px;
 }
+
+.ItemContainer{
+    display: grid;
+    gap: 20px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(3,190px);
+    grid-template-columns: repeat(4,22.5%);
+}
