@@ -1,0 +1,52 @@
+/* desktop */
+
+@media (min-width : 1221px){
+    
+}
+
+/* Tablet */
+@media (max-width : 1221px){
+    #container{
+        display: grid;
+        gap: 50px;
+        height: auto;
+        justify-content: center;
+    }
+    #featuresBox{
+        justify-content: center;
+    }
+    #btnBox{
+        width: 100%;
+    }
+    #gifBox{
+        height: 400px;
+    }
+}
+
+/* Mobile */
+@media (max-width : 600px){
+    #title{
+        padding: 0 0 15px 0;
+        font-size: 35px;
+    }
+    #subject{
+        text-align: justify;
+    }
+    #featuresBox > span{
+        font-size: 15px;
+    }
+    #btnBox > button{
+        width: 160px;
+    }
+    #titleGifBox{
+        left: 22px;
+        bottom: 10px;
+        font-size: 26px;
+    }
+    #cercle{
+        left: 22px;
+    }
+    #subTitleGifBox{
+        font-size: 18px;
+    }
+}
