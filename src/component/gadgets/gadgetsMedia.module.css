@@ -1,0 +1,13 @@
+/* Tablet */
+@media (max-width : 1221px){
+    #ItemContainer{
+        grid-template-columns: repeat(3,32%);
+    }
+}
+
+/* Mobile */
+@media (max-width : 760px){
+    #ItemContainer{
+        grid-template-columns: repeat(2,48%);
+    }
+}
