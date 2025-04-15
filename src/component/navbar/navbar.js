@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
-import styles from './navbar.module.css'
+import styles from './navbar.module.css';
+import medias from './navbarMedia.module.css';
 
 const Navbar = () => {
     const subMenuRef = useRef(null);
@@ -17,10 +18,11 @@ const Navbar = () => {
     };
     return(
         <div className={styles.container}>
+            <div id={medias.hamberMenu} className={styles.hamberMenu}></div>
             <div className={styles.imagebox}>
                 <img className={styles.imageElementPro} src='/image/navbar/elementor-pro-logo.png' alt='elementProImage' />
             </div>
-            <div>
+            <div id={medias.menuList}>
                 <ul className={styles.menuList}>
                     <li>
                         <a href='#'> سوالات متداول </a>

@@ -92,3 +92,10 @@ a{
     color: black;
     background-color: #b4b4b4;
 }
+
+/* hamber menu */
+.hamberMenu{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
