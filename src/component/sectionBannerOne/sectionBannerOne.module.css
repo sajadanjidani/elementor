@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heroContent{
+    text-align: center;
+    margin-top: -20px;
+    background-color: #C22155;
+}
+
+.heroContent h1{
+    color: white;
+    font-size: 30px;
+}
+
+.heroContent p{
+    color: #FFFFFFC2;
+    font-size: 20px;
+}
+
+.waveTop{
+    margin-top: -5px;
+}
