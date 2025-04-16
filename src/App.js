@@ -19,6 +19,16 @@ function App() {
         <SectionItem />
         <ItemDescrip />
       </AboutSection>
+      <AboutSection>
+        <ItemDescrip />
+        <SectionItem />
+        <SectionItem />
+      </AboutSection>
+      <AboutSection>
+        <SectionItem />
+        <SectionItem />
+        <ItemDescrip />
+      </AboutSection>
     </div>
   );
 }

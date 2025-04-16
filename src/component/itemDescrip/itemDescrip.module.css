@@ -6,6 +6,8 @@
 
 .container{
     width: 40%;
+    margin: 0 50px;
+    margin-top: -35px;
 }
 
 .title{
