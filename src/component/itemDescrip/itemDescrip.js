@@ -1,23 +1,23 @@
 import styles from './itemDescrip.module.css'
 
-const ItemDescrip = () => {
+const ItemDescrip = ({title, subTitle, fetch1, fetch2, fetch3, fetch4, fetch5, fetch6}) => {
     return(
         <div className={styles.container}>
-            <h1 className={styles.title}>ابزارک های اختصاصی</h1>
-            <p className={styles.subTitle}>با ابزارک های اختصاصی نسخه پرو المنتور، میتوانید صفحات با کیفیت تری نسبت به سایر صفحه ساز ها ، طراحی و پیاده سازی کنید! با ابزارک های اختصاصی نسخه پرو المنتور، میتوانید صفحات با کیفیت تری نسبت به سایر صفحه ساز ها ، طراحی و پیاده سازی کنید!</p>
+            <h1 className={styles.title}>{title}</h1>
+            <p className={styles.subTitle}>{subTitle}</p>
             <div className={styles.ulContainer}>
                 <div>
                     <ul>
-                        <li>تنوع بی‌نظیر ابزارک‌ها</li>
-                        <li>سفارشی‌سازی بی‌نهایت</li>
-                        <li>کارایی و سرعت بالا</li>
+                        <li>{fetch1}</li>
+                        <li>{fetch2}</li>
+                        <li>{fetch3}</li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li>سازگاری با سایر افزونه‌ها</li>
-                        <li>رابط کاربری آسان و شهودی</li>
-                        <li>بهینه‌سازی برای موتورهای جستجو</li>
+                        <li>{fetch4}</li>
+                        <li>{fetch5}</li>
+                        <li>{fetch6}</li>
                     </ul>
                 </div>
             </div>
