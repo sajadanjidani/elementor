@@ -5,6 +5,7 @@ import Gadgets from './component/gadgets/gadgets';
 import SectionBannerOne from './component/sectionBannerOne/sectionBannerOne';
 import AboutSection from './component/aboutSection/aboutSection';
 import SectionItem from './component/sectionItem/sectionItem';
+import ItemDescrip from './component/itemDescrip/itemDescrip';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutSection>
         <SectionItem />
         <SectionItem />
+        <ItemDescrip />
       </AboutSection>
     </div>
   );

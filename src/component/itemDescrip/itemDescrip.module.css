@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 40%;
+}
+
+.title{
+    font-size: 35px;
+    color: #404757;
+}
+                                                                                                                               
+.subTitle{
+    color: #858A96;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.ulContainer{
+    display: flex;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #404757;
+    justify-content: space-around;
+}
