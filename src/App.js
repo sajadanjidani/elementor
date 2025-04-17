@@ -6,6 +6,7 @@ import SectionBanner from './component/sectionBanner/sectionBanner';
 import AboutSection from './component/aboutSection/aboutSection';
 import SectionItem from './component/sectionItem/sectionItem';
 import ItemDescrip from './component/itemDescrip/itemDescrip';
+import FeatureCard from './component/FeatureCard/FeatureCard';
 
 function App() {
 
@@ -27,6 +28,13 @@ function App() {
   const sectionBannerColor = [
     {id: 1, color: '#C22155'},
     {id: 2, color: '#85225D'},
+  ]
+
+  const FeatureCardInfo = [
+    {id: 1, title: 'تاریخ شمسی در ورودی ها'},
+    {id: 2, title: 'آیکون های اختصاصی'},
+    {id: 3, title: 'ابزارک آپارت'},
+    {id: 4, title: 'فونت سفارشی'}
   ]
 
   return (
@@ -60,6 +68,12 @@ function App() {
         <ItemDescrip {...itemDescripInfo[2]}/>
       </AboutSection>
       <SectionBanner {...sectionBannerColor[1]}>
+        <div className='FeatureCardContainer'>
+          <FeatureCard {...FeatureCardInfo[0]}></FeatureCard>
+          <FeatureCard {...FeatureCardInfo[1]}></FeatureCard>
+          <FeatureCard {...FeatureCardInfo[2]}></FeatureCard>
+          <FeatureCard {...FeatureCardInfo[3]}></FeatureCard>
+        </div>
       </SectionBanner>
     </div>
   );

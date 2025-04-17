@@ -1,6 +1,11 @@
 import styles from './sectionBanner.module.css'
 
 const SectionBanner = ({children, color}) => {
+
+    const backgroundStyle = {
+        backgroundColor: color
+    }
+
     return(
         <div>
             <section class="hero">
@@ -11,7 +16,7 @@ const SectionBanner = ({children, color}) => {
                     </path>
                 </svg>
 
-                <div class={styles.heroContent}>
+                <div  style={backgroundStyle} class={styles.heroContent}>
                     {children}
                 </div>
 

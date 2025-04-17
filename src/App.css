@@ -7,6 +7,11 @@
     gap: 20px;
 }
 
+.FeatureCardContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media (max-width : 1221px){
     .sectionItemContainer{
         justify-content: space-around;
@@ -15,5 +20,15 @@
 @media (max-width : 666px){
     .sectionItemContainer{
         display: grid;
+    }
+    .FeatureCardContainer{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2,auto);
+    }
+}
+@media (max-width : 500px){
+    .FeatureCardContainer{
+        grid-template-columns: 1fr;
     }
 }
