@@ -9,7 +9,7 @@ import ItemDescrip from './component/itemDescrip/itemDescrip';
 import FeatureCard from './component/FeatureCard/FeatureCard';
 import DescriptFeatures from './component/descriptFeatures/descriptFeatures';
 import ContentDescriptFeatures from './component/contentDescriptFeatures/contentDescriptFeatures';
-import FeatureSlider from './component/featuresSlider/featuresSlider';
+import FeatureSlider from './component/featuresSlider/featuresSlider'
 
 function App() {
 
