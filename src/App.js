@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './component/navbar/navbar';
 import Header from './component/header/header';
 import Gadgets from './component/gadgets/gadgets';
-import SectionBannerOne from './component/sectionBannerOne/sectionBannerOne';
+import SectionBanner from './component/sectionBanner/sectionBanner';
 import AboutSection from './component/aboutSection/aboutSection';
 import SectionItem from './component/sectionItem/sectionItem';
 import ItemDescrip from './component/itemDescrip/itemDescrip';
@@ -24,12 +24,20 @@ function App() {
     {id: 3, title: 'قرار دادن شرط پوسته ساز', subTitle: 'با استفاده از این قابلیت می‌توانید کنترل کاملی روی نمایش بخش‌های مختلف سایت داشته باشید و تجربه کاربری حرفه‌ای‌تری را برای بازدیدکنندگان فراهم کنید. شرط‌های نمایش المنتور پرو یکی از قوی‌ترین ابزارهایی است که برای شخصی‌سازی قالب‌ها بدون نیاز به کدنویسی هست', fetch1: 'نوع نوشته‌های سفارشی', fetch2: 'برای صفحه ووکامرس', fetch3: 'صفحات آرشیو', fetch4: 'تنوع گسترده عناصر و ماژول‌ها', fetch5: 'سفارشی‌سازی پیشرفته', fetch6: 'رابط کاربری بصری و آسان'}
   ]
 
+  const sectionBannerColor = [
+    {id: 1, color: '#C22155'},
+    {id: 2, color: '#85225D'},
+  ]
+
   return (
     <div className='orginContainer'>
       <Navbar></Navbar>
       <Header></Header>
       <Gadgets></Gadgets>
-      <SectionBannerOne></SectionBannerOne>
+      <SectionBanner {...sectionBannerColor[0]}>
+        <h1>طراحی یک وبسایت کاملاً پویا</h1>
+        <p>با استفاده از سیستم پوسته‌ساز افزونه المنتور پرو می‌توانید یک وبسایت کاملاً پویا و بهینه طراحی کنید!</p>
+      </SectionBanner>
       <AboutSection>
         <div className='sectionItemContainer'>
           <SectionItem {...sectionItemInfo[0]} />
@@ -51,6 +59,8 @@ function App() {
         </div>
         <ItemDescrip {...itemDescripInfo[2]}/>
       </AboutSection>
+      <SectionBanner {...sectionBannerColor[1]}>
+      </SectionBanner>
     </div>
   );
 }
