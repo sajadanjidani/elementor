@@ -135,6 +135,14 @@ function App() {
           <ContentDescriptFeatures {...contentDescriptFeaturesInfo[5]}></ContentDescriptFeatures>
         </div>
       </DescriptFeatures>
+      <SectionBanner {...sectionBannerColor[1]}>
+        <div className='bannerThree'>
+          <p>منتظر چی هستی؟!</p>
+          <h1>همراه با 6 ماه پشتیبانی رایگان</h1>
+          <button>خرید افزونه از راست چین</button>
+          <p>افزونه المنتور پرو را با 6 ماه پشتیبانی رایگان تهیه کنید!</p>
+        </div>
+      </SectionBanner>
     </div>
   );
 }

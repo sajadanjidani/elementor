@@ -56,3 +56,22 @@
     height: 400px;
 }
 
+.bannerThree h1{
+    margin-top: -10px;
+}
+
+.bannerThree button{
+    padding: 7px 25px;
+    border-radius: 3px;
+    border: none;
+    color: #721d50;
+    margin: 20px 0;
+}
+
+.bannerThree button:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
