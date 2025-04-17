@@ -9,6 +9,7 @@ import ItemDescrip from './component/itemDescrip/itemDescrip';
 import FeatureCard from './component/FeatureCard/FeatureCard';
 import DescriptFeatures from './component/descriptFeatures/descriptFeatures';
 import ContentDescriptFeatures from './component/contentDescriptFeatures/contentDescriptFeatures';
+import FeatureSlider from './component/featuresSlider/featuresSlider';
 
 function App() {
 
@@ -111,7 +112,9 @@ function App() {
         </div>
       </DescriptFeatures>
       <DescriptFeatures>
-        <div className='imagebox'></div>
+        <div className='imagebox'>
+          <FeatureSlider></FeatureSlider>
+        </div>
         <div className='content'>
           <ContentDescriptFeatures {...contentDescriptFeaturesInfo[3]}></ContentDescriptFeatures>
         </div>
