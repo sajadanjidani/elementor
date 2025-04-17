@@ -7,6 +7,8 @@ import AboutSection from './component/aboutSection/aboutSection';
 import SectionItem from './component/sectionItem/sectionItem';
 import ItemDescrip from './component/itemDescrip/itemDescrip';
 import FeatureCard from './component/FeatureCard/FeatureCard';
+import DescriptFeatures from './component/descriptFeatures/descriptFeatures';
+import ContentDescriptFeatures from './component/contentDescriptFeatures/contentDescriptFeatures';
 
 function App() {
 
@@ -35,6 +37,15 @@ function App() {
     {id: 2, title: 'آیکون های اختصاصی'},
     {id: 3, title: 'ابزارک آپارت'},
     {id: 4, title: 'فونت سفارشی'}
+  ]
+
+  const contentDescriptFeaturesInfo = [
+    {id: 1, title: 'ابزارک اختصاصی آپارات', content: 'به سادگی ویدیوهای آپارات خود را وارد کرده و آن‌ها را به صورت خودکار در سایت‌تان نمایش دهید. با کنترل کامل و بدون آسیب به سئو'},
+    {id: 2, title: 'دارای 17 فونت فارسی', content: `با پشتیبانی از 17 فونت زیبا به شما این امکان را میدهد تا  بدون نیاز به نصب فونت اضافه طراحی سایت خود را حرفه ای تر و چشم نواز تر کنید از فونت های مدرن و رسمی تا سبک فانتزی و جذاب همه در اختیار شماست تا تایپوگرافی را متناسب با برند و سلیقه خود تنظیم کنید.`},
+    {id: 3, title: 'فرم اماده', content: 'امکان ایجاد فرم‌های سفارشی بدون نیاز به کدنویسی را فراهم می‌کنند. با استفاده از این ویژگی، می‌توان فرم‌های تماس، ثبت‌نام، ورود، درخواست مشاوره، پرداخت و بسیاری دیگر را به‌راحتی طراحی کرد.'},
+    {id: 4, title: 'اسلاید ها', content: 'امکان ایجاد اسلایدرهای جذاب و حرفه‌ای را بدون نیاز به افزونه‌های جانبی فراهم می‌کند. با استفاده از ابزار «Slides» در المنتور پرو، می‌توانید اسلایدهای متنوعی با تصاویر، متون و دکمه‌های قابل تنظیم ایجاد کنید.'},
+    {id: 5, title: 'ویرایش با کشیدن و رها کردن', content: 'هر بخشی از وبسایتت رو به صورت دیداری بساز. خیلی ساده با کشیدن و رها کردن ابزارک ها و سفارشی سازی اون ها، .بدون نیاز به دانش کد نویسی، وب‌سایت حرفه‌ای خود را بسازد.'},
+    {id: 6, title: 'بیش از ۱۰۰ ابزارک', content: 'المنتور پرو با ده‌ها ابزارک کاربرپسند، به شما اجازه می‌دهد بدون نیاز به دانش فنی، وبسایتی حرفه‌ای طراحی کنید. از پیچیده‌ترین افکت‌ها تا فروشگاه آنلاین کامل، همه در دسترس شماست.'}
   ]
 
   return (
@@ -75,6 +86,52 @@ function App() {
           <FeatureCard {...FeatureCardInfo[3]}></FeatureCard>
         </div>
       </SectionBanner>
+      <DescriptFeatures>
+        <div className='content'>
+          <ContentDescriptFeatures {...contentDescriptFeaturesInfo[0]}></ContentDescriptFeatures>
+        </div>
+        <div className='imagebox'>
+          <img className='image' src='image/imageFeatures/1.png'></img>
+        </div>
+      </DescriptFeatures>
+      <DescriptFeatures>
+        <div className='imagebox'>
+          <img src='image/imageFeatures/2.png'></img>
+        </div>
+        <div className='content'>
+          <ContentDescriptFeatures {...contentDescriptFeaturesInfo[1]}></ContentDescriptFeatures>
+        </div>
+      </DescriptFeatures>
+      <DescriptFeatures>
+        <div className='content'>
+          <ContentDescriptFeatures {...contentDescriptFeaturesInfo[2]}></ContentDescriptFeatures>
+        </div>
+        <div className='imagebox'>
+          <img className='image' src='image/imageFeatures/3.png'></img>
+        </div>
+      </DescriptFeatures>
+      <DescriptFeatures>
+        <div className='imagebox'></div>
+        <div className='content'>
+          <ContentDescriptFeatures {...contentDescriptFeaturesInfo[3]}></ContentDescriptFeatures>
+        </div>
+      </DescriptFeatures>
+      <DescriptFeatures>
+        <div className='content'>
+          <ContentDescriptFeatures {...contentDescriptFeaturesInfo[4]}></ContentDescriptFeatures>
+        </div>
+        <div className='imagebox'>
+          <img className='image' src='image/imageFeatures/4-5.png'></img>
+        </div>
+      </DescriptFeatures>
+      <DescriptFeatures>
+        <div className='imagebox'>
+          <img className='image5' src='image/imageFeatures/4-5.png'></img>
+        </div>
+        <div className='content'>
+          <ContentDescriptFeatures {...contentDescriptFeaturesInfo[5]}></ContentDescriptFeatures>
+        </div>
+      </DescriptFeatures>
     </div>
   );
 }
