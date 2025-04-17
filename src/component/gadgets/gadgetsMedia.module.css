@@ -1,7 +1,7 @@
 /* Tablet */
 @media (max-width : 1221px){
     #ItemContainer{
-        grid-template-columns: repeat(3,32%);
+        grid-template-columns: repeat(3,31%);
     }
 }
 

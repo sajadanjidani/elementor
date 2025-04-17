@@ -1,11 +1,12 @@
 import styles from './itemDescrip.module.css'
+import medias from './itemDescripMedia.module.css'
 
 const ItemDescrip = ({title, subTitle, fetch1, fetch2, fetch3, fetch4, fetch5, fetch6}) => {
     return(
-        <div className={styles.container}>
+        <div id={medias.container} className={styles.container}>
             <h1 className={styles.title}>{title}</h1>
             <p className={styles.subTitle}>{subTitle}</p>
-            <div className={styles.ulContainer}>
+            <div id={styles.ulContainer} className={styles.ulContainer}>
                 <div>
                     <ul>
                         <li>{fetch1}</li>

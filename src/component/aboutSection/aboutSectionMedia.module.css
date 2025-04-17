@@ -1,0 +1,9 @@
+@media (max-width : 1221px){
+    #continer{
+        height: auto;
+    }
+    #itemContainer{
+        display: grid;
+        margin-bottom: 100px;
+    }
+}

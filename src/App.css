@@ -6,3 +6,14 @@
     display: flex;
     gap: 20px;
 }
+
+@media (max-width : 1221px){
+    .sectionItemContainer{
+        justify-content: space-around;
+    }
+}
+@media (max-width : 666px){
+    .sectionItemContainer{
+        display: grid;
+    }
+}

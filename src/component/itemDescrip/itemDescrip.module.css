@@ -28,3 +28,10 @@
     color: #404757;
     justify-content: space-around;
 }
+
+@media (max-width : 570px){
+    .ulContainer{
+        display: block;
+        margin: 20px;
+    }
+}
