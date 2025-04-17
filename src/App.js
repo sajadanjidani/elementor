@@ -31,18 +31,24 @@ function App() {
       <Gadgets></Gadgets>
       <SectionBannerOne></SectionBannerOne>
       <AboutSection>
-        <SectionItem {...sectionItemInfo[0]} />
-        <SectionItem {...sectionItemInfo[1]} />
+        <div className='sectionItemContainer'>
+          <SectionItem {...sectionItemInfo[0]} />
+          <SectionItem {...sectionItemInfo[1]} />
+        </div>
         <ItemDescrip {...itemDescripInfo[0]}/>
       </AboutSection>
       <AboutSection>
         <ItemDescrip {...itemDescripInfo[1]}/>
-        <SectionItem {...sectionItemInfo[2]} />
-        <SectionItem {...sectionItemInfo[3]} />
+        <div className='sectionItemContainer'>
+          <SectionItem {...sectionItemInfo[2]} />
+          <SectionItem {...sectionItemInfo[3]} />
+        </div>
       </AboutSection>
       <AboutSection>
-        <SectionItem {...sectionItemInfo[4]} />
-        <SectionItem {...sectionItemInfo[5]} />
+        <div className='sectionItemContainer'>
+          <SectionItem {...sectionItemInfo[4]} />
+          <SectionItem {...sectionItemInfo[5]} />
+        </div>
         <ItemDescrip {...itemDescripInfo[2]}/>
       </AboutSection>
     </div>

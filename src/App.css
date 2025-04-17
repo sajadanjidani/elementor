@@ -1,3 +1,8 @@
 .orginContainer{
     padding: 50px 0;
 }
+
+.sectionItemContainer{
+    display: flex;
+    gap: 20px;
+}
