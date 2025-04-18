@@ -240,6 +240,7 @@ function App() {
         <BuyItem {...buyItemInfo[0]}></BuyItem>
         <BuyItem {...buyItemInfo[1]}></BuyItem>
       </div>
+      <div className='footer'></div>
     </div>
   );
 }
