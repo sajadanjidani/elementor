@@ -11,6 +11,7 @@ import DescriptFeatures from './component/descriptFeatures/descriptFeatures';
 import ContentDescriptFeatures from './component/contentDescriptFeatures/contentDescriptFeatures';
 import FeatureSlider from './component/featuresSlider/featuresSlider';
 import CommentSlider from './component/commentSlider/commentSlider';
+import BuyItem from './component/buyItem/buyItem';
 
 function App() {
 
@@ -80,6 +81,11 @@ function App() {
       document.getElementById('answer3').style.display = 'block'
     }
   }
+
+  const buyItemInfo = [
+    {id: 1, title: 'نسخه سایت راست چین', descript: 'با خرید از سایت راست چین شما به نسخه اورجینال موجود در سایت المنتور و نسخه اختصاصی راست چین مادام العمر دسترسی دارید .', price: 'مبلغ:465 هزار تومان', buyBtn: 'خرید از سایت راست چین'},
+    {id: 2, title: 'نسخه انگلیسی', descript: 'می توانید افزونه را از سایت اصلی المنتور تنها با لایسنس یکساله خریداری کنید.', price: 'مبلغ:59 دلار', buyBtn: 'خرید از سایت المنتور'}
+  ]
 
   return (
     <div className='orginContainer'>
@@ -230,9 +236,10 @@ function App() {
           <p>تخفیف پلکانی برای خرید دوم به بعد</p>
         </div>
       </div>
-      <DescriptFeatures>
-        
-      </DescriptFeatures>
+      <div className='buyItemContainer'>
+        <BuyItem></BuyItem>
+        <BuyItem></BuyItem>
+      </div>
     </div>
   );
 }
