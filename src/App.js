@@ -31,6 +31,7 @@ function App() {
   const sectionBannerColor = [
     {id: 1, color: '#C22155'},
     {id: 2, color: '#85225D'},
+    {id: 3, color: '#572881'}
   ]
 
   const FeatureCardInfo = [
@@ -152,6 +153,13 @@ function App() {
           <ContentDescriptFeatures {...contentDescriptFeaturesInfo[6]}></ContentDescriptFeatures>
         </div>
       </DescriptFeatures>
+      <SectionBanner {...sectionBannerColor[2]}>
+        <div className='lastBanner'>
+          <div className='iconContiner'></div>
+          <h1>آنچه مشتریان درباره ما می گویند</h1>
+          <div className='commentbox'></div>
+        </div>
+      </SectionBanner>
     </div>
   );
 }

@@ -109,3 +109,24 @@
         height: 250px;
     }
 }   
+
+.lastBanner{
+    display: grid;
+    gap: 20px;
+    height: auto;
+    justify-items: center;
+}
+
+.iconContiner{
+    width: 90px;
+    height: 90px;
+    margin-bottom: -20px;
+    border-radius: 20px;
+    background-color: #C22155;
+}
+
+.commentbox{
+    width: 70%;
+    height: 270px;
+    background-color: blue;
+}
