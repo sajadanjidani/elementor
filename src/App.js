@@ -237,8 +237,8 @@ function App() {
         </div>
       </div>
       <div className='buyItemContainer'>
-        <BuyItem></BuyItem>
-        <BuyItem></BuyItem>
+        <BuyItem {...buyItemInfo[0]}></BuyItem>
+        <BuyItem {...buyItemInfo[1]}></BuyItem>
       </div>
     </div>
   );
