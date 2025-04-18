@@ -230,6 +230,9 @@ function App() {
           <p>تخفیف پلکانی برای خرید دوم به بعد</p>
         </div>
       </div>
+      <DescriptFeatures>
+        
+      </DescriptFeatures>
     </div>
   );
 }
