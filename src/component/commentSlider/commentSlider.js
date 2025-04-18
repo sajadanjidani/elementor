@@ -1,9 +1,18 @@
-import styles from './commentSlider.modlue.css'
+import styles from './commentSlider.module.css'
 
-const CommentSlider = () => {
+const CommentSlider = ({userName, comment}) => {
+
+    let fontSizeStyle = {
+        fontSize : '16px'
+    }
+
     return(
-        <div>
-            
+        <div className={styles.container}>
+            <p className={styles.comment} style={fontSizeStyle}>{comment}</p>
+            <div className={styles.userBox}>
+                <div className={styles.imagebox}></div>
+                <p>{userName}</p>
+            </div>
         </div>
     )
 }

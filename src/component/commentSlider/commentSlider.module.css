@@ -1,0 +1,22 @@
+.container{
+    display: grid;
+    gap: 20px;
+    width: 500px;
+    flex-shrink: 0;
+    padding: 20px 13px;
+    background-color: #6b4291;
+}
+.comment{
+    text-align: right;
+}
+.imagebox{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: white;
+}
+.userBox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

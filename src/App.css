@@ -122,11 +122,18 @@
     height: 90px;
     margin-bottom: -20px;
     border-radius: 20px;
-    background-color: #C22155;
+    background-color: #de2761;
 }
 
-.commentbox{
-    width: 70%;
-    height: 270px;
-    background-color: blue;
+.commentbox {
+    width: 1020px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
 }

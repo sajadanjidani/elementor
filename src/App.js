@@ -9,7 +9,8 @@ import ItemDescrip from './component/itemDescrip/itemDescrip';
 import FeatureCard from './component/FeatureCard/FeatureCard';
 import DescriptFeatures from './component/descriptFeatures/descriptFeatures';
 import ContentDescriptFeatures from './component/contentDescriptFeatures/contentDescriptFeatures';
-import FeatureSlider from './component/featuresSlider/featuresSlider'
+import FeatureSlider from './component/featuresSlider/featuresSlider';
+import CommentSlider from './component/commentSlider/commentSlider';
 
 function App() {
 
@@ -49,6 +50,13 @@ function App() {
     {id: 5, title: 'ویرایش با کشیدن و رها کردن', content: 'هر بخشی از وبسایتت رو به صورت دیداری بساز. خیلی ساده با کشیدن و رها کردن ابزارک ها و سفارشی سازی اون ها، .بدون نیاز به دانش کد نویسی، وب‌سایت حرفه‌ای خود را بسازد.'},
     {id: 6, title: 'بیش از ۱۰۰ ابزارک', content: 'المنتور پرو با ده‌ها ابزارک کاربرپسند، به شما اجازه می‌دهد بدون نیاز به دانش فنی، وبسایتی حرفه‌ای طراحی کنید. از پیچیده‌ترین افکت‌ها تا فروشگاه آنلاین کامل، همه در دسترس شماست.'},
     {id: 7, title: 'ویرایش واکنشگرا', content: 'وبسایت واکنش‌گرا، کلید موفقیت در دنیای دیجیتال امروز است. با طراحی وبسایتی که در هر دستگاهی به بهترین شکل نمایش داده شود، مخاطبان بیشتری را جذب می کند .وبسایتت رو به صورتی طراحی کن که درون هر صفحه نمایش به درستی تنظیم باشه، میتونی واکنشگرا بودن وبسایتت رو درون ۷ تا دستگاه مختلف (دسکتاپ، تبلت و موبایل با سایز های متنوع) امتحان و تعیین کنی.'}
+  ]
+
+  const commentInfo = [
+    {id: 1, userName: 'سجاد انجیدنی', comment: 'یه پلاگین بی‌نظیره. المنتور پرو دقیقاً همون چیزیه که یه مبتدی برای طراحی حرفه‌ای لازم داره. از پشتیبانی‌شون هم خیلی راضی‌ام؛ حتی برای مشکلات کوچیک هم راهنمایی کامل می‌کنن.'},
+    {id: 2, userName: 'محمد لجه ای', comment: 'این افزونه زندگی منو به‌عنوان طراح سایت تغییر داد. هم امکانات فوق‌العاده‌ای داره، هم تیم پشتیبانی همیشه با حوصله کمک می‌کنن تا مشکلات حل بشه.'},
+    {id: 3, userName: 'امیر دولت شاهی', comment: 'پشتیبانی المنتور پرو یه جورایی مثل داشتن یه هم‌تیمی هست که همیشه کنارتونه. هم راه‌حل سریع میدن و هم پیشنهادهای بهتری برای بهینه‌سازی سایت میدن.'},
+    {id: 4, userName: 'امین فارسی', comment: 'من از افزونه‌های دیگه هم استفاده کرده بودم، ولی هیچ‌کدوم به‌پای المنتور پرو نمی‌رسه. خدمات پس از فروش و تیم پشتیبانی‌شون هم یکی از بهترین‌هاست.'},
   ]
 
   return (
@@ -157,7 +165,14 @@ function App() {
         <div className='lastBanner'>
           <div className='iconContiner'></div>
           <h1>آنچه مشتریان درباره ما می گویند</h1>
-          <div className='commentbox'></div>
+          <div className='commentbox'>
+            <div className='slider-track '>
+              <CommentSlider {...commentInfo[0]}></CommentSlider>
+              <CommentSlider {...commentInfo[1]}></CommentSlider>
+              <CommentSlider {...commentInfo[2]}></CommentSlider>
+              <CommentSlider {...commentInfo[3]}></CommentSlider>
+            </div>
+          </div>
         </div>
       </SectionBanner>
     </div>
