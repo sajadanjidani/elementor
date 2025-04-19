@@ -1,0 +1,1 @@
+Location.href = '/public/index.html'
