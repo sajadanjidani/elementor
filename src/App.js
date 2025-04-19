@@ -12,6 +12,7 @@ import ContentDescriptFeatures from './component/contentDescriptFeatures/content
 import FeatureSlider from './component/featuresSlider/featuresSlider';
 import CommentSlider from './component/commentSlider/commentSlider';
 import BuyItem from './component/buyItem/buyItem';
+import ListFooter from './component/listFooter/listFooter';
 
 function App() {
 
@@ -85,6 +86,11 @@ function App() {
   const buyItemInfo = [
     {id: 1, title: 'نسخه سایت راست چین', descript: 'با خرید از سایت راست چین شما به نسخه اورجینال موجود در سایت المنتور و نسخه اختصاصی راست چین مادام العمر دسترسی دارید .', price: 'مبلغ:465 هزار تومان', buyBtn: 'خرید از سایت راست چین'},
     {id: 2, title: 'نسخه انگلیسی', descript: 'می توانید افزونه را از سایت اصلی المنتور تنها با لایسنس یکساله خریداری کنید.', price: 'مبلغ:59 دلار', buyBtn: 'خرید از سایت المنتور'}
+  ]
+
+  const footerInfo = [
+    {id: 1, li1: 'منابع', li2: 'تست افزونه', li3: 'پشتیبانی', li4: 'افزودنی ها'},
+    {id: 2, li1: 'منابع', li2: 'نقشه راه', li3: 'لیست تغییرات', li4: 'قالب آماده'}
   ]
 
   return (
@@ -240,7 +246,14 @@ function App() {
         <BuyItem {...buyItemInfo[0]}></BuyItem>
         <BuyItem {...buyItemInfo[1]}></BuyItem>
       </div>
-      <div className='footer'></div>
+      <div className='footer'>
+        <div>
+          <h1>المنتور</h1>
+          <p>محبوب ترین صفحه ساز</p>
+        </div>
+        <ListFooter {...footerInfo[0]}></ListFooter>
+        <ListFooter {...footerInfo[1]}></ListFooter>
+      </div>
     </div>
   );
 }

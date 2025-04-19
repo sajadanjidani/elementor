@@ -1,0 +1,13 @@
+.container{
+    color: white;
+}
+
+#headerList{
+    font-weight: bold;
+}
+
+.listItem{
+    font-size: 18px;
+    list-style: none;
+    cursor: pointer;
+}
