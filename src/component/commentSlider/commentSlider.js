@@ -2,13 +2,10 @@ import styles from './commentSlider.module.css'
 
 const CommentSlider = ({userName, comment}) => {
 
-    let fontSizeStyle = {
-        fontSize : '16px'
-    }
-
+    
     return(
         <div className={styles.container}>
-            <p className={styles.comment} style={fontSizeStyle}>{comment}</p>
+            <p className={styles.comment}>{comment}</p>
             <div className={styles.userBox}>
                 <div className={styles.imagebox}></div>
                 <p>{userName}</p>

@@ -11,10 +11,10 @@
 
 .heroContent h1{
     color: white;
-    font-size: 30px;
+    font-size: 35px;
 }
 
-@media (max-width : 500px){
+@media (max-width : 550px){
     .heroContent h1{
         font-size: 25px;
     }
@@ -22,13 +22,6 @@
 
 .heroContent p{
     color: #FFFFFFC2;
-    font-size: 20px;
-}
-
-@media (max-width : 430px){
-    .heroContent p{
-        font-size: 25px;
-    }
 }
 
 .waveTop{

@@ -19,7 +19,13 @@
 }
 
 .comment{
+    font-size: 16px;
     text-align: right;
+}
+@media (max-width : 556px){
+    .comment{
+        font-size: 14px;
+    }
 }
 .imagebox{
     width: 70px;
