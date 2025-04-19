@@ -202,6 +202,16 @@
     cursor: pointer;
 }
 
+@media (max-width : 780px) {
+    .listbox{
+        width: 96%;
+        padding: 20px 0;
+    }
+    .titleQustion{
+        font-size: 15px;
+    }
+}
+
 .answerQustion{
     display: none;
     font-size: 15px;

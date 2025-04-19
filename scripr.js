@@ -1,1 +1,2 @@
-Location.href = '/public/index.html'
+console.log('ioi');
+window.location.href = './public/index.html';

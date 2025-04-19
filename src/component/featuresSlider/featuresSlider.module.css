@@ -15,3 +15,8 @@
         height: 250px;
     }
 }
+@media (max-width : 500px){
+    .container{
+        width: 325px;
+    }
+}
