@@ -137,6 +137,17 @@
         width: 520px;
     }
 }
+@media (max-width : 555px){
+    .commentbox{
+        width: 400px;
+    }
+}
+@media (max-width : 430px){
+    .commentbox{
+        width: 300px;
+    }
+}
+
 
 .slider-track {
     display: flex;
