@@ -242,6 +242,17 @@
     font-weight: 900;
     font-size: 40px;
 }
+@media (max-width : 656px){
+    .titleFotter{
+        font-size: 35px;
+    }
+}
+@media (max-width : 547px){
+    .titleFotter{
+        font-size: 25px;
+    }
+}
+
 .btnFotter{
     width: 200px;
     margin: 50px 0;
