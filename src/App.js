@@ -251,8 +251,10 @@ function App() {
           <h1>المنتور</h1>
           <p>محبوب ترین صفحه ساز</p>
         </div>
-        <ListFooter {...footerInfo[0]}></ListFooter>
-        <ListFooter {...footerInfo[1]}></ListFooter>
+        <div className='listFooterContainer'>
+          <ListFooter {...footerInfo[0]}></ListFooter>
+          <ListFooter {...footerInfo[1]}></ListFooter>
+        </div>
       </div>
     </div>
   );
